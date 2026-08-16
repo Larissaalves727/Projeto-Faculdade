@@ -1,5 +1,18 @@
-#D63438 Vermelho
+@charset "UTF-8";
 
-#FBB131 AMARELO
 
-#373435 PRETO
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-1:#D63438;
+    --cor-2:#FBB131;
+    --cor-3:#373435;
+    --cor-4:#ffffff;
+}
+
+nav#menu ul{
+    list-style: none;
+}
