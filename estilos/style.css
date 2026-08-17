@@ -7,26 +7,39 @@
 }
 
 :root{
-    --cor-1:#D63438;
+    --cor-1:#DA1F26;
     --cor-2:#FBB131;
     --cor-3:#373435;
     --cor-4:#ffffff;
+}
+header{
+    background-color: var(--cor-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 10px 30px;
+    height: 55px;
+}
+
+header > img#logo {
+    width: 120px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--cor-4);
+    margin: 50px 0px 0px -10px;
+    
 }
 
 nav#menu ul{
     list-style: none;
     display: flex;
-    gap: 10px;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-nav#menu li{
-    list-style: none;
-    
+    justify-content: flex-end;
+    gap: 25px;
 }
 nav#menu img{
-    width: 24px;
+    width: 30px; 
 }
 
 nav#menu a{
@@ -36,4 +49,9 @@ nav#menu a{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    color: var(--cor-4);
+}
+
+main{
+    padding-top: 400px;
 }
