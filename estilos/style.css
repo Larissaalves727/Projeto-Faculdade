@@ -7,11 +7,25 @@
 }
 
 :root{
+    --fundo:#f5f5f5;
     --cor-1:#DA1F26;
     --cor-2:#FBB131;
     --cor-3:#373435;
     --cor-4:#ffffff;
 }
+
+@font-face {
+    font-family: 'Rounded';
+    src: url('font/Rounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--fundo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
     background-color: var(--cor-1);
     display: flex;
@@ -19,7 +33,7 @@ header{
     justify-content: space-between;
     flex-direction: row-reverse;
     padding: 10px 30px;
-    height: 55px;
+    height: 45px;
 }
 
 header > img#logo {
@@ -27,7 +41,7 @@ header > img#logo {
     border-radius: 50%;
     border-style: solid;
     border-color: var(--cor-4);
-    margin: 50px 0px 0px -10px;
+    margin: 70px 0px 0px -10px;
     
 }
 
@@ -38,8 +52,18 @@ nav#menu ul{
     justify-content: flex-end;
     gap: 25px;
 }
+
+nav#menu li{
+    font-family: 'Rounded', Times, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 5px;
+}
+
 nav#menu img{
-    width: 30px; 
+    width: 26px;
+    margin: -6px;
+    padding-bottom: -6px;
 }
 
 nav#menu a{
@@ -54,4 +78,46 @@ nav#menu a{
 
 main{
     padding-top: 400px;
+}
+
+section#hambur {
+    background-color: var(--cor-1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+section#hambur > div#artham {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-row: auto ;
+    justify-content: start;
+}
+section > img{
+    width: 200px;
+    
+}
+h2{
+    font-family: 'Rounded';
+    padding-bottom: 20px;
+}
+
+section#hambur article{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    background-color: var(--cor-4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section#hambur img {
+    grid-column: 2/4;
+    justify-self: end; 
+    border-radius: 5px;
+}
+
+img {
+    width: 200px;
+    
 }
